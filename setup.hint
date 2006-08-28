@@ -1,6 +1,6 @@
 category: Shells Gnome
 requires: cygwin gtk2-x11 libX11_6 libglade2 libgnomecanvas2
-sdesc: "displays GNOME dialog boxes from shell scripts"
+sdesc: "GNOME dialog"
 ldesc: "This is zenity - a rewrite of gdialog, the GNOME port of dialog
 which allows you to display dialog boxes from the commandline
 and shell scripts."

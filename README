@@ -5,23 +5,24 @@ which allows you to display dialog boxes from the commandline
 and shell scripts. 
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  gtk2-x11-2.8.17-1
-  libX11_6-1.0.0-2
-  libglade2-2.5.1-1
+  cygwin-1.5.21-1
+  gtk2-x11-2.8.20-1
+  libX11_6-1.0.2-1
+  libglade2-2.6.0-1
   libgnomecanvas2-2.14.0-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   autoconf2.5-2.59-2
   automake1.9-1.9.6-1
   binutils-20050610-1
   cygport-0.2.1-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
+  gnome-doc-utils-0.6.1-1
   intltool-0.35.0-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
   scrollkeeper-0.3.14-2
   sed-4.1.5-1
@@ -35,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack zenity-2.14.1-1-src.tar.bz2
+  unpack zenity-2.14.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./zenity-2.14.1-1.cygport all
+  cygport ./zenity-2.14.3-1.cygport all
 
 This will create:
-  /usr/src/zenity-2.14.1-1-src.tar.bz2
-  /usr/src/zenity-2.14.1-1.tar.bz2
+  /usr/src/zenity-2.14.3-1-src.tar.bz2
+  /usr/src/zenity-2.14.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -52,16 +53,16 @@ Files included in the binary package:
   /etc/postinstall/zenity.sh
   /usr/bin/gdialog
   /usr/bin/zenity.exe
-  /usr/share/doc/Cygwin/zenity-2.14.1.README
-  /usr/share/doc/zenity-2.14.1/AUTHORS
-  /usr/share/doc/zenity-2.14.1/COPYING
-  /usr/share/doc/zenity-2.14.1/ChangeLog
-  /usr/share/doc/zenity-2.14.1/HACKING
-  /usr/share/doc/zenity-2.14.1/INSTALL
-  /usr/share/doc/zenity-2.14.1/NEWS
-  /usr/share/doc/zenity-2.14.1/README
-  /usr/share/doc/zenity-2.14.1/THANKS
-  /usr/share/doc/zenity-2.14.1/TODO
+  /usr/share/doc/Cygwin/zenity-2.14.3.README
+  /usr/share/doc/zenity-2.14.3/AUTHORS
+  /usr/share/doc/zenity-2.14.3/COPYING
+  /usr/share/doc/zenity-2.14.3/ChangeLog
+  /usr/share/doc/zenity-2.14.3/HACKING
+  /usr/share/doc/zenity-2.14.3/INSTALL
+  /usr/share/doc/zenity-2.14.3/NEWS
+  /usr/share/doc/zenity-2.14.3/README
+  /usr/share/doc/zenity-2.14.3/THANKS
+  /usr/share/doc/zenity-2.14.3/TODO
   /usr/share/gnome/help/zenity/C/figures/zenity-calendar-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-entry-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-error-screenshot.png
@@ -220,6 +221,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.14.3-1 -----
+Version bump.
 
 ----- version 2.14.2-1 -----
 Version bump.
