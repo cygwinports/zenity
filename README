@@ -5,27 +5,27 @@ which allows you to display dialog boxes from the commandline
 and shell scripts. 
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  gtk2-x11-2.8.20-1
-  libX11_6-1.0.2-1
+  cygwin-1.5.22-1
+  gtk2-x11-2.10.6-1
+  libX11_6-1.1.1-1
   libglade2-2.6.0-1
   libgnomecanvas2-2.14.0-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.1-1
+  binutils-20060817-1
+  cygport-0.2.7-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  gnome-doc-utils-0.6.1-1
-  intltool-0.35.0-1
+  gnome-doc-utils-0.8.0-1
+  intltool-0.35.1-1
   make-3.81-1
-  pkg-config-0.20-1
+  pkg-config-0.21-1
   scrollkeeper-0.3.14-2
-  sed-4.1.5-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://www.gnome.org/
@@ -36,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack zenity-2.14.3-1-src.tar.bz2
+  unpack zenity-2.16.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./zenity-2.14.3-1.cygport all
+  cygport ./zenity-2.16.2-1.cygport all
 
 This will create:
-  /usr/src/zenity-2.14.3-1-src.tar.bz2
-  /usr/src/zenity-2.14.3-1.tar.bz2
+  /usr/src/zenity-2.16.2-1-src.tar.bz2
+  /usr/src/zenity-2.16.2-1.tar.bz2
 
 -------------------------------------------
 
@@ -53,16 +53,15 @@ Files included in the binary package:
   /etc/postinstall/zenity.sh
   /usr/bin/gdialog
   /usr/bin/zenity.exe
-  /usr/share/doc/Cygwin/zenity-2.14.3.README
-  /usr/share/doc/zenity-2.14.3/AUTHORS
-  /usr/share/doc/zenity-2.14.3/COPYING
-  /usr/share/doc/zenity-2.14.3/ChangeLog
-  /usr/share/doc/zenity-2.14.3/HACKING
-  /usr/share/doc/zenity-2.14.3/INSTALL
-  /usr/share/doc/zenity-2.14.3/NEWS
-  /usr/share/doc/zenity-2.14.3/README
-  /usr/share/doc/zenity-2.14.3/THANKS
-  /usr/share/doc/zenity-2.14.3/TODO
+  /usr/share/doc/Cygwin/zenity-2.16.2.README
+  /usr/share/doc/zenity-2.16.2/AUTHORS
+  /usr/share/doc/zenity-2.16.2/COPYING
+  /usr/share/doc/zenity-2.16.2/ChangeLog
+  /usr/share/doc/zenity-2.16.2/HACKING
+  /usr/share/doc/zenity-2.16.2/NEWS
+  /usr/share/doc/zenity-2.16.2/README
+  /usr/share/doc/zenity-2.16.2/THANKS
+  /usr/share/doc/zenity-2.16.2/TODO
   /usr/share/gnome/help/zenity/C/figures/zenity-calendar-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-entry-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-error-screenshot.png
@@ -112,6 +111,18 @@ Files included in the binary package:
   /usr/share/gnome/help/zenity/fr/figures/zenity-text-screenshot.png
   /usr/share/gnome/help/zenity/fr/figures/zenity-warning-screenshot.png
   /usr/share/gnome/help/zenity/fr/zenity.xml
+  /usr/share/gnome/help/zenity/sv/figures/zenity-calendar-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-entry-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-error-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-fileselection-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-information-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-list-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-notification-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-progress-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-question-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-text-screenshot.png
+  /usr/share/gnome/help/zenity/sv/figures/zenity-warning-screenshot.png
+  /usr/share/gnome/help/zenity/sv/zenity.xml
   /usr/share/gnome/help/zenity/uk/figures/zenity-calendar-screenshot.png
   /usr/share/gnome/help/zenity/uk/figures/zenity-entry-screenshot.png
   /usr/share/gnome/help/zenity/uk/figures/zenity-error-screenshot.png
@@ -124,83 +135,85 @@ Files included in the binary package:
   /usr/share/gnome/help/zenity/uk/figures/zenity-text-screenshot.png
   /usr/share/gnome/help/zenity/uk/figures/zenity-warning-screenshot.png
   /usr/share/gnome/help/zenity/uk/zenity.xml
-  /usr/share/locale/am/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ar/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/az/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/be/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/bg/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/bn/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/bs/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ca/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/cs/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/cy/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/da/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/de/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/dz/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/el/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/en_CA/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/es/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/et/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/eu/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/fa/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/fi/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/fr/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ga/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/gl/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/gu/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/he/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/hi/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/hr/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/hu/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/id/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/is/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/it/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ja/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ka/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/kn/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ko/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ku/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/lt/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/mi/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/mk/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ml/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/mn/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ms/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/nb/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ne/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/nl/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/nn/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/no/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/or/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/pa/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/pl/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/pt/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ro/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ru/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/rw/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/sk/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/sl/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/sq/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/sr/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/sv/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ta/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/th/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/tr/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/ug/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/uk/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/vi/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/xh/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/zh_HK/LC_MESSAGES/zenity-0.1.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/zenity-0.1.mo
+  /usr/share/locale/am/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ar/LC_MESSAGES/zenity.mo
+  /usr/share/locale/az/LC_MESSAGES/zenity.mo
+  /usr/share/locale/be/LC_MESSAGES/zenity.mo
+  /usr/share/locale/bg/LC_MESSAGES/zenity.mo
+  /usr/share/locale/bn/LC_MESSAGES/zenity.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/zenity.mo
+  /usr/share/locale/bs/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ca/LC_MESSAGES/zenity.mo
+  /usr/share/locale/cs/LC_MESSAGES/zenity.mo
+  /usr/share/locale/cy/LC_MESSAGES/zenity.mo
+  /usr/share/locale/da/LC_MESSAGES/zenity.mo
+  /usr/share/locale/de/LC_MESSAGES/zenity.mo
+  /usr/share/locale/dz/LC_MESSAGES/zenity.mo
+  /usr/share/locale/el/LC_MESSAGES/zenity.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/zenity.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/zenity.mo
+  /usr/share/locale/es/LC_MESSAGES/zenity.mo
+  /usr/share/locale/et/LC_MESSAGES/zenity.mo
+  /usr/share/locale/eu/LC_MESSAGES/zenity.mo
+  /usr/share/locale/fa/LC_MESSAGES/zenity.mo
+  /usr/share/locale/fi/LC_MESSAGES/zenity.mo
+  /usr/share/locale/fr/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ga/LC_MESSAGES/zenity.mo
+  /usr/share/locale/gl/LC_MESSAGES/zenity.mo
+  /usr/share/locale/gu/LC_MESSAGES/zenity.mo
+  /usr/share/locale/he/LC_MESSAGES/zenity.mo
+  /usr/share/locale/hi/LC_MESSAGES/zenity.mo
+  /usr/share/locale/hr/LC_MESSAGES/zenity.mo
+  /usr/share/locale/hu/LC_MESSAGES/zenity.mo
+  /usr/share/locale/id/LC_MESSAGES/zenity.mo
+  /usr/share/locale/is/LC_MESSAGES/zenity.mo
+  /usr/share/locale/it/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ja/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ka/LC_MESSAGES/zenity.mo
+  /usr/share/locale/kn/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ko/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ku/LC_MESSAGES/zenity.mo
+  /usr/share/locale/lt/LC_MESSAGES/zenity.mo
+  /usr/share/locale/lv/LC_MESSAGES/zenity.mo
+  /usr/share/locale/mi/LC_MESSAGES/zenity.mo
+  /usr/share/locale/mk/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ml/LC_MESSAGES/zenity.mo
+  /usr/share/locale/mn/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ms/LC_MESSAGES/zenity.mo
+  /usr/share/locale/nb/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ne/LC_MESSAGES/zenity.mo
+  /usr/share/locale/nl/LC_MESSAGES/zenity.mo
+  /usr/share/locale/nn/LC_MESSAGES/zenity.mo
+  /usr/share/locale/or/LC_MESSAGES/zenity.mo
+  /usr/share/locale/pa/LC_MESSAGES/zenity.mo
+  /usr/share/locale/pl/LC_MESSAGES/zenity.mo
+  /usr/share/locale/pt/LC_MESSAGES/zenity.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ro/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ru/LC_MESSAGES/zenity.mo
+  /usr/share/locale/rw/LC_MESSAGES/zenity.mo
+  /usr/share/locale/sk/LC_MESSAGES/zenity.mo
+  /usr/share/locale/sl/LC_MESSAGES/zenity.mo
+  /usr/share/locale/sq/LC_MESSAGES/zenity.mo
+  /usr/share/locale/sr/LC_MESSAGES/zenity.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/zenity.mo
+  /usr/share/locale/sv/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ta/LC_MESSAGES/zenity.mo
+  /usr/share/locale/th/LC_MESSAGES/zenity.mo
+  /usr/share/locale/tr/LC_MESSAGES/zenity.mo
+  /usr/share/locale/ug/LC_MESSAGES/zenity.mo
+  /usr/share/locale/uk/LC_MESSAGES/zenity.mo
+  /usr/share/locale/vi/LC_MESSAGES/zenity.mo
+  /usr/share/locale/xh/LC_MESSAGES/zenity.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/zenity.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/zenity.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/zenity.mo
   /usr/share/man/man1/zenity.1.gz
   /usr/share/omf/zenity/zenity-C.omf
   /usr/share/omf/zenity/zenity-bg.omf
   /usr/share/omf/zenity/zenity-es.omf
   /usr/share/omf/zenity/zenity-fr.omf
+  /usr/share/omf/zenity/zenity-sv.omf
   /usr/share/omf/zenity/zenity-uk.omf
   /usr/share/zenity/clothes/gnome-tshirt.png
   /usr/share/zenity/clothes/hawaii-shirt.png
@@ -221,6 +234,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.16.2-1 -----
+Version bump for GNOME 2.16.
 
 ----- version 2.14.3-1 -----
 Version bump.
