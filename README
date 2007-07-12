@@ -6,10 +6,14 @@ and shell scripts.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  gtk2-x11-2.10.9-1
+  gdk-pixbuf2-2.10.13-1
+  glib2-2.12.12-2
+  gtk2-x11-2.10.13-1
   libX11_6-1.1.1-1
-  libglade2-2.6.0-1
+  libglade2-2.6.1-1
   libgnomecanvas2-2.14.0-1
+  libintl8-0.15-1
+  libnotify-0.4.4-1
 
 Build requirements:
 (besides corresponding devel packages)
@@ -36,32 +40,33 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack zenity-2.16.3-1-src.tar.bz2
+  unpack zenity-2.18.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./zenity-2.16.3-1.cygport all
+  cygport ./zenity-2.18.2-1.cygport all
 
 This will create:
-  /usr/src/zenity-2.16.3-1-src.tar.bz2
-  /usr/src/zenity-2.16.3-1.tar.bz2
+  /usr/src/zenity-2.18.2-1-src.tar.bz2
+  /usr/src/zenity-2.18.2-1.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/zenity.sh
+  /etc/preremove/zenity.sh
   /usr/bin/gdialog
   /usr/bin/zenity.exe
-  /usr/share/doc/Cygwin/zenity-2.16.3.README
-  /usr/share/doc/zenity-2.16.3/AUTHORS
-  /usr/share/doc/zenity-2.16.3/COPYING
-  /usr/share/doc/zenity-2.16.3/ChangeLog
-  /usr/share/doc/zenity-2.16.3/HACKING
-  /usr/share/doc/zenity-2.16.3/NEWS
-  /usr/share/doc/zenity-2.16.3/README
-  /usr/share/doc/zenity-2.16.3/THANKS
-  /usr/share/doc/zenity-2.16.3/TODO
+  /usr/share/doc/Cygwin/zenity-2.18.2.README
+  /usr/share/doc/zenity-2.18.2/AUTHORS
+  /usr/share/doc/zenity-2.18.2/COPYING
+  /usr/share/doc/zenity-2.18.2/ChangeLog
+  /usr/share/doc/zenity-2.18.2/HACKING
+  /usr/share/doc/zenity-2.18.2/NEWS
+  /usr/share/doc/zenity-2.18.2/README
+  /usr/share/doc/zenity-2.18.2/THANKS
+  /usr/share/doc/zenity-2.18.2/TODO
   /usr/share/gnome/help/zenity/C/figures/zenity-calendar-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-entry-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-error-screenshot.png
@@ -111,6 +116,18 @@ Files included in the binary package:
   /usr/share/gnome/help/zenity/fr/figures/zenity-text-screenshot.png
   /usr/share/gnome/help/zenity/fr/figures/zenity-warning-screenshot.png
   /usr/share/gnome/help/zenity/fr/zenity.xml
+  /usr/share/gnome/help/zenity/ru/figures/zenity-calendar-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-entry-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-error-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-fileselection-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-information-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-list-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-notification-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-progress-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-question-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-text-screenshot.png
+  /usr/share/gnome/help/zenity/ru/figures/zenity-warning-screenshot.png
+  /usr/share/gnome/help/zenity/ru/zenity.xml
   /usr/share/gnome/help/zenity/sv/figures/zenity-calendar-screenshot.png
   /usr/share/gnome/help/zenity/sv/figures/zenity-entry-screenshot.png
   /usr/share/gnome/help/zenity/sv/figures/zenity-error-screenshot.png
@@ -175,6 +192,7 @@ Files included in the binary package:
   /usr/share/locale/ku/LC_MESSAGES/zenity.mo
   /usr/share/locale/lt/LC_MESSAGES/zenity.mo
   /usr/share/locale/lv/LC_MESSAGES/zenity.mo
+  /usr/share/locale/mg/LC_MESSAGES/zenity.mo
   /usr/share/locale/mi/LC_MESSAGES/zenity.mo
   /usr/share/locale/mk/LC_MESSAGES/zenity.mo
   /usr/share/locale/ml/LC_MESSAGES/zenity.mo
@@ -213,6 +231,7 @@ Files included in the binary package:
   /usr/share/omf/zenity/zenity-bg.omf
   /usr/share/omf/zenity/zenity-es.omf
   /usr/share/omf/zenity/zenity-fr.omf
+  /usr/share/omf/zenity/zenity-ru.omf
   /usr/share/omf/zenity/zenity-sv.omf
   /usr/share/omf/zenity/zenity-uk.omf
   /usr/share/zenity/clothes/gnome-tshirt.png
@@ -234,6 +253,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.18.2-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 2.16.3-1 -----
 Version bump.
