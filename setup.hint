@@ -1,5 +1,5 @@
 category: Shells Gnome
-requires: cygwin glib2 gtk2-x11 libX11_6 libglade2 libgnomecanvas2 libintl8 libnotify
+requires: cygwin glib2 gtk2-x11 libglade2 libgnomecanvas2 libintl8 libnotify
 sdesc: "GNOME dialog"
 ldesc: "This is zenity - a rewrite of gdialog, the GNOME port of dialog
 which allows you to display dialog boxes from the commandline
