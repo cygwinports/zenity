@@ -1,0 +1,3 @@
+inherit gnome2
+
+DESCRIPTION="GNOME dialog"

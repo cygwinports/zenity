@@ -5,10 +5,10 @@ which allows you to display dialog boxes from the commandline
 and shell scripts. 
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gdk-pixbuf2-2.12.2-1
-  glib2-2.14.4-1
-  gtk2-x11-2.12.2-1
+  cygwin-1.5.25-11
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.16.3-1
+  gtk2-x11-2.12.9-1
   libglade2-2.6.2-1
   libgnomecanvas2-2.20.1.1-1
   libintl8-0.15-1
@@ -16,19 +16,18 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  gnome-doc-utils-0.12.0-1
-  intltool-0.36.2-1
+  gnome-common-2.20.0-2
+  gnome-doc-utils-0.12.2-1
+  intltool-0.37.1-1
   make-3.81-1
   pkg-config-0.21-1
-  rarian-0.6.0-1
+  rarian-0.8.0-1
   sed-4.1.5-2
 
 Canonical homepage:
@@ -40,33 +39,30 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack zenity-2.20.1-1-src.tar.bz2
+  unpack zenity-2.22.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./zenity-2.20.1-1.cygport all
+  cygport ./zenity-2.22.1-1.cygport all
 
 This will create:
-  /usr/src/zenity-2.20.1-1-src.tar.bz2
-  /usr/src/zenity-2.20.1-1.tar.bz2
+  /usr/src/zenity-2.22.1-1-src.tar.bz2
+  /usr/src/zenity-2.22.1-1.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /etc/postinstall/zenity.sh
-  /etc/preremove/zenity.sh
   /usr/bin/gdialog
   /usr/bin/zenity.exe
-  /usr/share/doc/Cygwin/zenity-2.20.1.README
-  /usr/share/doc/zenity-2.20.1/AUTHORS
-  /usr/share/doc/zenity-2.20.1/COPYING
-  /usr/share/doc/zenity-2.20.1/ChangeLog
-  /usr/share/doc/zenity-2.20.1/HACKING
-  /usr/share/doc/zenity-2.20.1/NEWS
-  /usr/share/doc/zenity-2.20.1/README
-  /usr/share/doc/zenity-2.20.1/THANKS
-  /usr/share/doc/zenity-2.20.1/TODO
+  /usr/share/doc/zenity-2.22.1/AUTHORS
+  /usr/share/doc/zenity-2.22.1/COPYING
+  /usr/share/doc/zenity-2.22.1/ChangeLog
+  /usr/share/doc/zenity-2.22.1/HACKING
+  /usr/share/doc/zenity-2.22.1/NEWS
+  /usr/share/doc/zenity-2.22.1/README
+  /usr/share/doc/zenity-2.22.1/THANKS
+  /usr/share/doc/zenity-2.22.1/TODO
   /usr/share/gnome/help/zenity/C/figures/zenity-calendar-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-entry-screenshot.png
   /usr/share/gnome/help/zenity/C/figures/zenity-error-screenshot.png
@@ -178,8 +174,10 @@ Files included in the binary package:
   /usr/share/gnome/help/zenity/uk/zenity.xml
   /usr/share/locale/am/LC_MESSAGES/zenity.mo
   /usr/share/locale/ar/LC_MESSAGES/zenity.mo
+  /usr/share/locale/as/LC_MESSAGES/zenity.mo
   /usr/share/locale/az/LC_MESSAGES/zenity.mo
   /usr/share/locale/be/LC_MESSAGES/zenity.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/zenity.mo
   /usr/share/locale/bg/LC_MESSAGES/zenity.mo
   /usr/share/locale/bn/LC_MESSAGES/zenity.mo
   /usr/share/locale/bn_IN/LC_MESSAGES/zenity.mo
@@ -221,6 +219,7 @@ Files included in the binary package:
   /usr/share/locale/mk/LC_MESSAGES/zenity.mo
   /usr/share/locale/ml/LC_MESSAGES/zenity.mo
   /usr/share/locale/mn/LC_MESSAGES/zenity.mo
+  /usr/share/locale/mr/LC_MESSAGES/zenity.mo
   /usr/share/locale/ms/LC_MESSAGES/zenity.mo
   /usr/share/locale/nb/LC_MESSAGES/zenity.mo
   /usr/share/locale/ne/LC_MESSAGES/zenity.mo
@@ -281,6 +280,9 @@ Files included in the binary package:
 --------------------
 
 Port Notes:
+
+----- version 2.22.1-1 -----
+Version bump for GNOME 2.22.
 
 ----- version 2.20.1-1 -----
 Version bump for GNOME 2.20.
