@@ -1,7 +1,0 @@
-inherit gnome2
-
-DESCRIPTION="GNOME dialog"
-
-DEPEND="gnome-common
-	pkgconfig(gtk+-3.0)
-	pkgconfig(libnotify)"

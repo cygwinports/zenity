@@ -1,0 +1,14 @@
+inherit gnome2
+
+NAME="zenity"
+VERSION=3.6.0
+RELEASE=1
+CATEGORY="Shells GNOME"
+SUMMARY="GNOME dialog"
+DESCRIPTION="This is zenity - a rewrite of gdialog, the GNOME port of dialog
+which allows you to display dialog boxes from the commandline
+and shell scripts."
+
+DEPEND="gnome-common
+	pkgconfig(gtk+-3.0)
+	pkgconfig(libnotify)"
